@@ -149,12 +149,38 @@ export default function GrantQuestionnaire() {
             <div className="border-t border-blue-900 my-6"></div>
 
             <div className="flex justify-center my-8">
-                <Link
-                    href="https://znw01op-sd.myshopify.com/pages/profile-matching-successful"
-                    className="bg-amber-400 hover:bg-amber-500 text-white font-bold py-4 px-20 rounded-md text-2xl">
-                    SUBMIT
-                </Link>
+             <input type="button"  className="nextcta bg-amber-400 hover:bg-amber-500 text-white font-bold py-4 px-20 rounded-md text-2xl" value="Submit" onclick="window.location.href='https://znw01op-sd.myshopify.com/pages/profile-matching-successful';">
+
             </div>
+                
+<script>
+$(document).ready(function(){
+$(document).on("click",".nextcta",function(){
+if ($('input[name=ans1]:checked').length > 0 &&
+$('input[name=ans2]:checked').length > 0 &&
+$('input[name=ans3]:checked').length > 0 &&
+$('input[name=ans4]:checked').length > 0) 
+{
+
+$.when($(".web-ques-wrap").fadeOut(1000))
+.done(function() {
+$(".end").fadeIn("slow");
+
+window.setTimeout(function(){
+
+// Move to a new location or you can do something else
+window.location.href = "https://znw01op-sd.myshopify.com/pages/profile-matching-successful";
+
+}, 1000);
+});
+
+
+}else{
+alert("Please answer all questions.");
+}
+});
+});
+</script>
 
             <div className="border-t border-blue-900 my-6"></div>
 
