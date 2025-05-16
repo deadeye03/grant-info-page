@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState } from "react"
 
 export default function GrantQuestionnaire() {
@@ -148,9 +149,11 @@ export default function GrantQuestionnaire() {
             <div className="border-t border-blue-900 my-6"></div>
 
             <div className="flex justify-center my-8">
-                <button className="bg-amber-400 hover:bg-amber-500 text-white font-bold py-4 px-20 rounded-md text-2xl">
+                <Link
+                    href="https://8cbf98-ed.myshopify.com/pages/profile-matching-successful"
+                    className="bg-amber-400 hover:bg-amber-500 text-white font-bold py-4 px-20 rounded-md text-2xl">
                     SUBMIT
-                </button>
+                </Link>
             </div>
 
             <div className="border-t border-blue-900 my-6"></div>

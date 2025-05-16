@@ -1,6 +1,7 @@
 import GrantInfoPage from "@/components/grant-info-page";
 import GrantQuestionnaire from "@/components/grant-questonaire";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,9 +19,9 @@ export default function Home() {
         </div>
 
         <div className="bg-foreground py-14 container mx-auto px-4 md:px-20">
-          <div className="relative flex justify-center items-center">
+          <Link href='https://8cbf98-ed.myshopify.com/pages/profile-matching-successful' className="relative flex justify-center items-center">
             <Image src="/hero.webp" alt="Background" height={700} width={700} className="object-cover" />
-          </div>
+          </Link>
           <GrantQuestionnaire />
         </div>
 
