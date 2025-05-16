@@ -1,9 +1,11 @@
 "use client"
 
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { useState } from "react"
 
 export default function GrantQuestionnaire() {
+    const router = useRouter();
     const [gender, setGender] = useState('')
     const [citizen, setCitizen] = useState('')
     const [income, setIncome] = useState('')
@@ -177,11 +179,12 @@ export default function GrantQuestionnaire() {
             </form>
 
             <div className="flex justify-center my-8">
-                <Link
-                    href="https://8cbf98-ed.myshopify.com/pages/profile-matching-successful"
+                <button
+                    onClick={() => router.push('https://8cbf98-ed.myshopify.com/pages/profile-matching-successful')}
+
                     className="bg-amber-400 hover:bg-amber-500 text-white font-bold py-4 px-20 rounded-md text-2xl">
                     SUBMIT
-                </Link>
+                </button>
             </div>
 
             <div className="border-t border-blue-900 my-6"></div>
