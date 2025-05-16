@@ -10,7 +10,7 @@ export default function GrantQuestionnaire() {
     const [age, setAge] = useState('')
 
     return (
-         <div className="max-w-3xl mx-auto p-6">
+         <div className="bg-white max-w-3xl mx-auto p-6">
             <div className="text-center mb-6">
                 <h3 className="text-1xl text-sky-400 font-normal">
                     Answer a few questions below to get matched with programs that interest you. Grant Programs currently provide
