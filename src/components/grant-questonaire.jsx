@@ -148,6 +148,34 @@ export default function GrantQuestionnaire() {
 
             <div className="border-t border-blue-900 my-6"></div>
 
+            <form action="" className="hidden">
+                <div className="mb-8">
+                    <h2 className="text-lg text-sky-600 font-medium flex items-center mb-4">
+                        <span className="mr-2">»</span> 5. What is your highest level of education?
+                    </h2>
+                    <div className="flex gap-12 ml-8">
+                        <label className="flex items-center">
+                            <input
+                                type="radio"
+                                name="education"
+                                value="highschool"
+                                className="mr-2 h-4 w-4"
+                            />
+                            High School Diploma
+                        </label>
+                        <label className="flex items-center">
+                            <input
+                                type="radio"
+                                name="education"
+                                value="ged"
+                                className="mr-2 h-4 w-4"
+                            />
+                            GED
+                        </label>
+                    </div>
+                </div>
+            </form>
+
             <div className="flex justify-center my-8">
                 <Link
                     href="https://8cbf98-ed.myshopify.com/pages/profile-matching-successful"
